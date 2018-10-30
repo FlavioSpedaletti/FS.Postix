@@ -1,0 +1,234 @@
+html {font-size:100.01%}
+body {color:#FFF; font:.625em verdana, arial, sans-serif; text-align:center; background-color:#9FAEC3;}
+* { margin:0; padding:0;}
+
+div, img, h1, h2, h3, h2 span, a { _behavior: url("css/iepngfix.htc") }
+
+a{text-decoration:none;}
+hr {display:none}
+ul {list-style-image:none; list-style-position:outside; list-style-type:none;}
+.replace, .sites li a, .sites li strong, .twitter li a, .twitter li strong {overflow:hidden; padding:0; position:relative}
+.replace a span, a.replace span, .sites li a span, .twitter li a span {cursor:pointer}
+.replace span, .sites li span, .twitter li span {background-position:0 0; background-repeat:no-repeat; left:0; position:absolute; top:0}
+#container {background:transparent url(../imgs/bg-site.jpg) no-repeat scroll 0 0; height:980px; margin:0 auto; text-align:left; width:1003px; }
+#container.artigos {height:1070px; }
+#header{height:230px; padding-top:10px; width:1003px}
+#header h1 {background-image:url(../imgs/Postix.png); display:inline; float:left;margin:20px 0px 0px 55px; }
+#header h1 {font-size:4em; font-weight:normal; height:120px; width:400px}
+#header h2 {background-image:url(../imgs/orkut.png); display:inline; float:right;margin:25px 50px 0px 0px; }
+#header h2 {font-size:4em; font-weight:normal; height:100px; width:100px; }
+#header h3 {background-image:url(../imgs/hero.png); display:inline; float:right;margin:20px 10px 0px 0px; }
+#header h3 {font-size:4em; font-weight:normal; height:110px; width:120px; }
+
+#header #flash_suspenso {float:center; height:220px; width:1003px; margin:0 0 0 0;}
+h2, h3 {font-size:1.6em}
+#content {margin:0 0 0 0;width:1003px}
+#menu {background:#eee; margin:0 0 0 0; text-align:left; width:1003px; height:30px; padding:0px;}
+#menu_classico {background-image:url(../imgs/menu.png); margin:0 0 0 0; text-align:left; width:993px; height:20px; padding:5px;}
+
+/*
+MENU NOVO
+*/
+.itens div {font-size:13px; float:left; width:150px; max-width:150px; /*background:url(../imgs/separador.gif) right bottom no-repeat;*/ text-align:center;}
+.itens .selecionado {background:#ddd; background:url(../imgs/fundo_selecionado.png)}
+.itens .selecionado a {text-decoration:none; color:#00121e;}
+.itens .selecionado a:hover {cursor:default; }
+.itens .naoSelecionado a {text-decoration:none; color:#00121e;}
+.itens .naoSelecionado a:visited {text-decoration:none;color:#00121e;}
+.itens .naoSelecionado a:hover {text-decoration:underline;color:#000;}
+
+.itens #item1 { margin-left:125px; _margin-left:65px; margin-right:auto; height:25px;border-top:5px solid #b7462c; }
+.itens #item1:hover { background:/*#b7462c;*/ #ccc; }
+.itens #item2 { height:25px;border-top:5px solid #2b9435; }
+.itens #item2:hover { background:/*#2b9435;*/ #ccc; }
+.itens #item3 { height:25px;border-top:5px solid #a5cc3a; }
+.itens #item3:hover { background:/*#a5cc3a;*/ #ccc; }
+.itens #item4 { height:25px;border-top:5px solid #e6ab07; }
+.itens #item4:hover { background:/*#e6ab07;*/ #ccc; }
+.itens #item5 { height:25px;border-top:5px solid #326abd; }
+.itens #item5:hover { background:/*#326abd;*/ #ccc; }
+
+#menu-esq, #menu-dir {float:left;margin:0 0 0 10px; width:231px}
+#menu-parceiros {
+             background-image:url(../imgs/bg-menu-parceiros.png);
+	     width:218px;
+             height:365px;
+             padding-top:0px;
+             position:relative;
+             margin-bottom:10px;}
+#menu-parceiros h2 {margin:0px 0px 0px 20px;} 
+#menu-parceiros h2, #menu-parceiros h2 span {font-size:3em; font-weight:normal; height:35px; width:180px}
+#menu-parceiros h2 span {background-image:url(../imgs/destaques.png)}
+#menu-parceiros .sites li, .sites li span {display:inline; float:left; height:65px; line-height:60px; text-align:center; text-decoration:none; width:120px}
+#menu-parceiros .sites li.site1 span {background-image:url(../imgs/justit.jpg)}
+#menu-parceiros .sites li.site2 span {background-image:url(../imgs/seja_parceiro.jpg)}
+#menu-parceiros .sites li.site3 span {background-image:url(../imgs/seja_parceiro.jpg)}
+#menu-parceiros .sites li.site4 span {background-image:url(../imgs/seja_parceiro.jpg)}
+#menu-destaques {
+             background-image:url(../imgs/bg-menu-destaques.png);
+	     width:218px;
+             height:600px;
+             padding-top:0px;
+             position:relative;}
+#menu-destaques h2 {margin:0px 0px 0px 20px;} 
+#menu-destaques h2, #menu-destaques h2 span {font-size:3em; font-weight:normal; height:35px; width:180px}
+#menu-destaques h2 span {background-image:url(../imgs/destaques.png)}
+#menu-destaques .sites li, .sites li span {display:inline; float:left; height:65px; line-height:60px; text-align:center; text-decoration:none; width:120px}
+#menu-destaques .sites li.site1 span {background-image:url(../imgs/ttl-blog1.jpg)}
+#menu-destaques .sites li.site2 span {background-image:url(../imgs/ttl-blog2.jpg)}
+#menu-destaques .sites li.site3 span {background-image:url(../imgs/ttl-blog3.jpg)}
+#menu-destaques .sites li.site4 span {background-image:url(../imgs/ttl-blog4.gif)}
+#menu-posts {
+             background-image:url(../imgs/bg_postit.png);
+             width:218px;
+             _width:200px;
+             height:307px;
+             padding-top:0px;
+             margin-bottom:10px;
+             }
+#menu-posts h2 {margin:0px 0px 0px 20px;} 
+#menu-posts h2, #menu-posts h2 span {font-size:3em; font-weight:normal; height:40px; width:180px}
+#menu-posts h2 span {background-image:url(../imgs/contato.png)}
+#menu-posts table {margin-left:20px;margin-top:5px;}
+#menu-posts .lbl {font-weight:bold; color:#00121e;}
+#menu-posts .txt {border:dotted 3px #fa0; background-color:#ffa; width:172px;}
+#menu-posts .btn {border:solid 1px red;margin-top:20px;}
+#menu-posts .submit {margin-top:10px;}
+#menu-posts ul {margin:10px 0 0 42px}
+#menu-posts li, #menu-posts li a {width:65px; text-align:justify; margin:0 8px 10px 0}
+.twitter li, .twitter li a {display:inline; float:left; height:63px; text-align:center; text-decoration:none;}
+.twitter li.twitter1 a {background:url(../imgs/flavio.png) top left no-repeat;}
+.twitter li.twitter1 span {display:none}
+.twitter li.twitter2 a {background:url(../imgs/twitter_usuario.png) top left no-repeat;}
+.twitter li.twitter2 span {display:none}
+.twitter li.twitter3 a {background:url(../imgs/twitter_usuario.png) top left no-repeat;}
+.twitter li.twitter3 span {display:none}
+.twitter li.twitter4 a {background:url(../imgs/twitter_usuario.png) top left no-repeat;}
+.twitter li.twitter4 span {display:none}
+#logo-pequeno {background-image:url(../imgs/logo-pequeno.png);height:80px; margin:-45px 0 0 320px; width:75px;}
+.main { float:left;height:600px;width:740px;}
+.main h2 {margin:-37px 0 0 585px;} 
+.main h2, #main2 h2 a {font-size:3em; font-weight:normal; height:156px; width:155px}
+.main h2 span {background-image:url(img/bt-mande-seu-texto.png); height:156px; width:155px}
+.main #texto2 {text-align:justify; font-size:14px; margin:30px 0px 0px 30px;width:690px;}
+.main #texto2 p {margin-bottom:20px; color:#00121e;}
+.main #texto2 p strong {color:#b50900}
+#main2.main {background-image:url(../imgs/bg-div-main2.png); }
+#main3.main {height:770px;background-image:url(../imgs/bg-div-main3.png); }
+
+.quotes {
+    padding-left:45px;
+    text-align:right;
+    background: #f9f9f9 url(../imgs/quote-open.png) no-repeat top left;
+    font-weight:bold;
+    color:#900;
+    margin-bottom:20px;
+    font-size:12px;
+}
+
+.quotes div {
+   padding-right:45px;
+   padding-top:5px;
+   margin-bottom:5px;
+   text-align:justify;
+   background: url(../imgs/quote-close.png) no-repeat bottom right;
+   font-weight:normal;
+}
+
+.quotes div p {
+   margin-bottom:20px;
+   font-size:11px;
+}
+
+.quotes div p:hover {
+   text-decoration:underline;
+   cursor:pointer;
+}
+
+#main2 #texto2 .quotes div p strong {
+   color:#b50900;
+}
+
+#galera {margin-top:-26px;}
+#footer {clear:both; background:#999; text-align:center; width:993px; padding:5px; margin:0 auto}
+#footer #contato a {text-decoration:underline;color:#b50900}
+
+/*ORCAMENTO*/
+
+#orcamento
+{
+	width:690px;
+}
+
+#orcamento .title
+{
+	text-align:center;
+	background-color:#ccc;
+	color:black;
+}
+
+#orcamento .lbl
+{
+	font-weight:bold; color:#00121e; font-size:10px;
+}
+
+#orcamento .txt
+{
+	border:0;
+	border-bottom:dotted 1px #c22;
+	background-color:#fafafa;
+	width:300px;
+}
+
+#orcamento .txtqtd
+{
+	border:0;
+	border-bottom:dotted 1px #c22;
+	background-color:#fafafa;
+	width:50px;
+}
+
+#orcamento .txta
+{
+	border:dotted 1px #c22;
+	background-color:#fafafa;
+	width:670px;
+}
+
+#orcamento .chk
+{
+	font-weight:bold; color:#00121e; font-size:10px;
+}
+
+#orcamento .btn
+{
+	border:solid #000 1px;
+	padding:3px;
+	font-weight:bold;
+	color:#00121e;
+	background-color:#eee;
+	font-size:10px;
+	cursor:pointer;
+}
+
+#orcamento a
+{
+	font-weight:bold; color:#00f; font-size:10px;
+	cursor:pointer;
+}
+
+#orcamento .criacao
+{
+	padding:5px;
+}
+
+/*FIM ORCAMENTO*/
+
+/*ARTIGOS*/
+
+#artigos
+{
+	
+}
+
+/*FIM ARTIGOS*/

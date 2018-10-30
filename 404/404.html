@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="url" content="http://www.postix.com.br">
+		<meta name="language" content="Portugues">
+		<meta name="description" content="Desenvolvimento de websites. Barato e com qualidade.">
+		<meta name="keywords" content="websites,website,sites,site,barato,qualidade,preço,baixo">
+		<meta name="author" content="Flavio Henrique Freitas Spedaletti">
+		<meta name="robots" content="index,follow" />
+		<meta name="verify-v1" content="56R2rbCFEDj+ehbwhrOeRbqiDEV6TUhF1WMIZxeQ1Fo=" />
+
+		<title>POSTix</title>
+
+		<link rel="shortcut icon" href="imgs/favicon.ico">
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.postix.com.br/404/css/style.css" />
+
+		<script type="text/javascript" src="http://www.postix.com.br/js/iepngfix_tilebg.js"></script>
+		<script type="text/javascript" src="http://www.postix.com.br/js/atualize_seu_navegador.js"></script>
+		<script type="text/javascript" src="http://www.postix.com.br/js/jquery-1.3.2.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			    $.getScript(gaJsHost + "google-analytics.com/ga.js", function(){
+
+			        try {
+						var pageTracker = _gat._getTracker("UA-8971968-1");
+			            pageTracker._trackPageview();
+					} catch(err) {}
+
+					var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+
+			        $('a').each(function(){
+			            var href = $(this).attr('href');
+
+			            if ((href.match(/^https?\:/i)) && (!href.match(document.domain))){
+			                $(this).click(function() {
+			                    var extLink = href.replace(/^https?\:\/\//i, '');
+			                    pageTracker._trackEvent('External', 'Click', extLink);
+			                });
+			            }
+			            else if (href.match(/^mailto\:/i)){
+			                $(this).click(function() {
+			                    var mailLink = href.replace(/^mailto\:/i, '');
+			                    pageTracker._trackEvent('Email', 'Click', mailLink);
+			                });
+			            }
+			            else if (href.match(filetypes)){
+			                $(this).click(function() {
+			                    var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+			                    var filePath = href.replace(/^https?\:\/\/(www.)mydomain\.com\//i, '');
+			                    pageTracker._trackEvent('Download', 'Click - ' + extension, filePath);
+			                });
+			            }
+			        });
+
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="content">
+				<div id="menu-esq">
+					<div id="menu-parceiros">
+						<h2 class="replace"><span></span></h2>
+					</div>
+				</div>
+
+				<div class="main">
+					<div id="texto">
+						<p><strong>Erro 404 - P&aacute;gina n&atilde;o encontrada.</strong></p>
+						<p>O servidor bem que tentou...</p>
+						<p>Voc&ecirc; pode:</p>
+						<ul>
+							<li>verificar a p&aacute;gina</li>
+							<li><a href="mailto:contato@postix.com.br?subject=404">reportar</a> o erro</li>
+							<li>visitar o <a href="http://www.justit.com.br" target="_blank">justit</a></li>
+							<li>voltar a <a href="http://www.postix.com.br/index.html">home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div id="footer">
+        	<p>&copy; Todos os direitos reservados</p>
+        	<p id="contato"><a href="mailto:contato@postix.com.br">contato@postix.com.br</a></p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="url" content="http://www.postix.com.br" />
+		<meta name="language" content="Portugues" />
+		<meta name="description" content="Desenvolvimento de websites. Barato e com qualidade." />
+		<meta name="keywords" content="websites,website,sites,site,barato,qualidade,pre&ccedil;o,baixo" />
+		<meta name="author" content="Flavio Henrique Freitas Spedaletti" />
+		<meta name="robots" content="index,follow" />
+		<meta name="verify-v1" content="56R2rbCFEDj+ehbwhrOeRbqiDEV6TUhF1WMIZxeQ1Fo=" />
+
+		<title>POSTix</title>
+
+		<link rel="shortcut icon" href="imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+		<script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
+		<script type="text/javascript" src="js/atualize_seu_navegador.js"></script>
+		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			    $.getScript(gaJsHost + "google-analytics.com/ga.js", function(){
+
+			        try {
+						var pageTracker = _gat._getTracker("UA-8971968-1");
+			            pageTracker._trackPageview();
+					} catch(err) {}
+
+					var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+
+			        $('a').each(function(){
+			            var href = $(this).attr('href');
+
+			            if ((href.match(/^https?\:/i)) && (!href.match(document.domain))){
+			                $(this).click(function() {
+			                    var extLink = href.replace(/^https?\:\/\//i, '');
+			                    pageTracker._trackEvent('External', 'Click', extLink);
+			                });
+			            }
+			            else if (href.match(/^mailto\:/i)){
+			                $(this).click(function() {
+			                    var mailLink = href.replace(/^mailto\:/i, '');
+			                    pageTracker._trackEvent('Email', 'Click', mailLink);
+			                });
+			            }
+			            else if (href.match(filetypes)){
+			                $(this).click(function() {
+			                    var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+			                    var filePath = href.replace(/^https?\:\/\/(www.)mydomain\.com\//i, '');
+			                    pageTracker._trackEvent('Download', 'Click - ' + extension, filePath);
+			                });
+			            }
+			        });
+
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div id="container" class="artigos">
+			<div id="header">
+				<a href="index.html"><h1></h1></a>
+				<a href="http://www.orkut.com.br/Main#Profile.aspx?rl=fpp&uid=7265147108434888847" target="_blank"><h2></h2></a>
+				<a href="http://twitter.com/flavio_hfs" target="_blank"><h3></h3></a>
+				<!--
+				<div id="flash_suspenso">
+					<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="1003" HEIGHT="150" id="plane" ALIGN="">
+					   <PARAM NAME=movie VALUE="fla/logo_main.swf">
+					   <PARAM NAME=quality VALUE=high>
+					   <PARAM NAME=scale VALUE=exactfit>
+					   <PARAM NAME=wmode VALUE=transparent>
+					   <EMBED src="fla/logo_main.swf" quality=high scale=exactfit wmode=transparent WIDTH="1003" HEIGHT="150" NAME="plane" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+					   </EMBED>
+					</OBJECT>
+				</div>
+				-->
+			</div>
+			<hr />
+			<div id="content">
+				<div id="menu" class="itens">
+					<div id="item1" class="naoSelecionado">
+						<a href="index.html" title="">corporativo</a>
+					</div>
+					<div id="item2" class="naoSelecionado">
+						<a href="planos.html" title="">planos</a>
+					</div>
+					<div id="item3" class="naoSelecionado">
+						<a href="portfolio.html" title="">portfolio</a>
+					</div>
+					<div id="item4" class="selecionado">
+						<a href="artigos.html" title="">artigos</a>
+					</div>
+					<div id="item5" class="naoSelecionado">
+						<a href="orcamento.html" title="">or&ccedil;amento</a>
+					</div>
+				</div>
+				<br />
+				<!--
+				<div id="menu_classico">
+					<ul class="itens_class">
+						<li><a id="item1" class="selecionado" href="index.html" title="">corporativo</a></li>
+						<li><a id="item2" class="naoSelecionado" href="#" title="">planos</a></li>
+						<li><a id="item3" class="naoSelecionado" href="#" title="">portfolio</a></li>
+						<li><a id="item4" class="naoSelecionado" href="#" title="">artigos</a></li>
+						<li><a id="item5" class="naoSelecionado" href="#" title="">o</a></li>
+					</ul>
+				</div>
+				<br />
+				-->
+				<div id="menu-esq">
+					<div id="menu-parceiros">
+						<h2 class="replace"><span></span></h2>
+						<ul class="sites">
+							<li class="site1"><a href="http://www.justit.com.br">site1<span>&nbsp;</span></a></li>
+							<li class="site2"><a href="mailto:contato@postix.com.br">site2<span>&nbsp;</span></a></li>
+							<li class="site3"><a href="mailto:contato@postix.com.br">site3<span>&nbsp;</span></a></li>
+							<li class="site4"><a href="mailto:contato@postix.com.br">site4<span>&nbsp;</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="main3" class="main">
+					<!--<div id="logo-pequeno"></div>-->
+					<div id="texto2">
+						<div id="artigos">
+							<p><strong>Artigos</strong></p>
+							<p>Mais do que nunca &eacute; fundamental ter alternativas para a manuten&ccedil;&atilde;o e propaga&ccedil;&atilde;o do seu neg&oacute;cio.<br>
+							   E o que temos visto &eacute; uma constante evolu&ccedil;&atilde;o nas campanhas promovidas pela internet.</p>
+							<p>Saiba como as <b>novas m&iacute;dias</b> podem te ajudar:</p>
+
+							<blockquote class="quotes">
+								<div class="sub-quote">
+									<a href="javascript:OpenURL('artigo1.html')">
+										<p>...<br>
+										   Esse pode ser o momento de muitas campanhas planejadas para m&iacute;dias mais conservadoras serem
+										   migradas, em parte, para o canal online onde os investimentos ainda s&atilde;o razoavelmente menores e os
+										   resultados cada vez mais maduros.<br><br>
+										   Os formatos de m&iacute;dia, novas propostas para aferi&ccedil;&atilde;o de audi&ecirc;ncia e o tracking das campanhas est&atilde;o cada
+										   vez mais sofisticados, al&eacute;m do bolo (usu&aacute;rios online) que continua aumentando. Ser&aacute; que agora n&atilde;o pode
+										   ser a vez da internet comer uma fatia ainda maior dos investimentos dessas corpora&ccedil;&otilde;es?<br>
+										   ...</p>
+									</a>
+								</div>
+								Campanhas na internet n&atilde;o ter&atilde;o crise, pelo contr&aacute;rio<br>[Webinsider]
+							</blockquote>
+
+							<blockquote class="quotes">
+								<div class="sub-quote">
+									<a href="javascript:OpenURL('artigo2.html')">
+										<p>...<br>
+										   &Eacute; a prova definitiva de que o perfil do internauta brasileiro est&aacute; mudando r&aacute;pida e radicalmente - tanto
+										   que uma pesquisa recente do Datafolha revelou que o n&uacute;mero de acessos em lan houses e locais p&uacute;blicos
+										   j&aacute; &eacute; o maior do pa&iacute;s (22% contra 19% de acessos residenciais). Ou seja, mesmo quem ainda n&atilde;o comprou
+										   seu 'computador pr&oacute;prio' j&aacute; consegue alugar um espacinho online por 5 reais a hora.<br>
+										   ...</p>
+									</a>
+								</div>
+								Acostume-se: a internet n&atilde;o &eacute; mais das elites<br>[Webinsider]
+							</blockquote>
+
+							<blockquote class="quotes">
+								<div class="sub-quote">
+									<a href="javascript:OpenURL('artigo3.html')">
+										<p>...<br>
+										   Foque no seu objetivo, por exemplo, quero que o site me converta (retorne) em liga&ccedil;&otilde;es, este &eacute; o objetivo.
+										   Simples, pegue 10% da sua verba, e invista no receptivo - isto mesmo - no site invista a menor parte.<br><br>
+										   Pague algu&eacute;m para fazer uma p&aacute;gina s&oacute; com uma logo bem destacada, um texto simples e curto, que fale
+										   de seus servi&ccedil;os e uma chamada para liga&ccedil;&atilde;o. Para um resultado maior pegue um formul&aacute;rio simples que a
+										   pessoa s&oacute; escreve o nome e o telefone e coloca como t&iacute;tulo - ligamos para voc&ecirc; - pronto a pessoa entra no
+										   site, v&ecirc; "um geral" da empresa r&aacute;pido, e escolhe: se atraiu liga, ou ainda sem pagar nada, ele pode receber
+										   uma liga&ccedil;&atilde;o.<br>
+										   ...</p>
+									</a>
+								</div>
+								Tenho uma verba muito... muito pequena, como posso investir na internet?<br>[Mercadobinario]
+							</blockquote>
+
+							<blockquote class="quotes">
+								<div class="sub-quote">
+									<a href="http://www.importarcontatos.com.br/">
+										<p>...<br>
+										   Aprenda a importar contatos de gmail, importar contatos de hotmail, importar contatos do yahoo, importar contatos do outlook e importar contatos em geral.<br>
+										   ...</p>
+									</a>
+								</div>
+								[importarcontatos.com.br]
+							</blockquote>
+
+							<p>Ainda com d&uacute;vidas: <a href="mailto:contato@postix.com.br"><strong>entre em contato</strong></a>.</p>
+
+						</div>
+					</div>
+					<!--
+					    <h2 id="mande-seu-texto" class="replace"><a href="cadastro.php" alt="Mande seu texto!"><span>&nbsp;</span></a></h2>
+					    <div id="galera">
+						<img src="css/img/galera-do-toboga.png" />
+						</div>-->
+				</div>
+				<!--
+				<div id="menu-dir">
+					<div id="menu-destaques">
+						<h2 class="replace"><span></span></h2>
+						<ul class="sites">
+							<li class="site1"><a href="#">site1<span>&nbsp;</span></a></li>
+							<li class="site2"><a href="#">site2<span>&nbsp;</span></a></li>
+							<li class="site3"><a href="#">site3<span>&nbsp;</span></a></li>
+							<li class="site4"><a href="#">site4<span>&nbsp;</span></a></li>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+		</div>
+        <div id="footer">
+			<p>&copy; Todos os direitos reservados</p>
+			<p id="contato"><a href="mailto:contato@postix.com.br">contato@postix.com.br</a></p>
+        </div>
+
+	</body>
+
+	<script type="text/javascript">
+
+	function OpenURL(url)
+	{
+		myRef = window.open('artigos/'+url,'artigo','left=20,top=20,width=800,height=700,toolbar=0,scrollbars=1,resizable=1,location=0,menubar=1');
+
+	}
+
+	</script>
+</html>

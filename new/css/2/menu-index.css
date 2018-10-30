@@ -1,0 +1,33 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; vertical-align: baseline}
+
+#menu_bar {float: left; width: 421px; border-bottom: 0px solid #575757}
+#menu {list-style-type: none; margin: 0; height: 97px; background: url("../../imagens/menu-index.jpg") no-repeat 0 0; width: 421px}
+#menu li {display: block; float: left}
+#menu li a {display: block; height: 97px; color: #818181; text-indent: -9999px; overflow: hidden}
+#menu li a:hover {}
+#menu li#menu_latest a, #menu li#menu_projects a, #menu li#menu_about a, #menu li#menu_services a, #menu li#menu_contact a, #menu li#menu_say_hello a {background-repeat: no-repeat; background-image: url("../../imagens/menu-index.jpg")}
+#menu li#menu_latest a {width: 85px; background-position: 0 0}
+#menu li#menu_projects a {width: 85px; background-position: -85px 0}
+#menu li#menu_about a {width: 83px; background-position: -170px 0}
+#menu li#menu_services a {width: 82px; background-position: -255px 0}
+#menu li#menu_contact a {width: 80px; background-position: -337px 0}
+
+#menu li#menu_latest a.active, #menu li#menu_home a.active_parent {background-position: 0 -194px}
+#menu li#menu_projects a.active, #menu li#menu_about a.active_parent {background-position: -85px -194px}
+#menu li#menu_about a.active, #menu li#menu_showcase a.active_parent {background-position: -170px -194px}
+#menu li#menu_services a.active, #menu li#menu_news a.active_parent {background-position: -255px -194px}
+#menu li#menu_contact a.active, #menu li#menu_blog a.active_parent {background-position: -337px -194px}
+
+#menu li#menu_latest a:hover {background-position: 0 -97px}
+#menu li#menu_projects a:hover {background-position: -85px -97px}
+#menu li#menu_about a:hover {background-position: -170px -97px}
+#menu li#menu_services a:hover {background-position: -255px -97px}
+#menu li#menu_contact a:hover {background-position: -337px -97px}
+
+#menu li a.active, #menu li.main_section li a.active {color: #fff}
+#menu li a.active_parent, #menu li.main_section li a.active_parent {}
+#menu li ul {margin: 0 0 0 10px; list-style-type: none}
+#menu li ul li {font-size: 100%}
+#menu li.first a, a.last {border-top: none !important}
+
+

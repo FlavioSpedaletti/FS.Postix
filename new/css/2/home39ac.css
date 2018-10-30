@@ -1,0 +1,52 @@
+
+
+/* our work div */
+#our_work h2 {
+	color: #fff;
+	font-size: 1.33em;
+	margin-bottom: 20px;
+}
+
+#our_work li{
+	list-style:none;
+	float:left;
+	background: #fff url(../images/bg_with_caption.png) no-repeat 0 0;
+	margin:30px 5px 30px 35px;
+	padding: 2px 15px 2px 2px;
+	width:258px;
+	position: relative;
+}
+
+#our_work li.last{
+	margin-right:0;
+}
+
+#our_work li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height: 107px;
+	width: 226px;
+	padding: 16px;
+	color: #666666;
+	font: 1.1em Helvetica, sans-serif;
+}
+
+#our_work li a:focus, #our_work li a:hover { text-decoration: none; }
+
+#our_work li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 139px;
+	width: 258px;
+	border: 0;
+}
+
+#intro {
+	float: left;
+	width: 270px;
+	margin: 0 20px 0 0;
+	color: #999;
+}
+

@@ -1,0 +1,22 @@
+input.btn{
+color:#050;
+font-family:Verdana,sans-serif;
+font-size:9px;
+font-weight:bold;
+background-color:#DDDDDD;
+border:1px solid #AB0E15;
+padding:1px 1px 1px 1px; /* Firefox */
+color:#AB0E15; /*Fore Color*/
+cursor:pointer;
+<%--width:100px;--%>
+}
+
+input.btn:hover{
+background-color:#CCCCCC;
+/*border:1px solid #C6D880;
+color:#529214;*/
+}
+
+body {color:#00121e; text-decoration:bold; font:.625em verdana, arial, sans-serif; text-align:center;}
+#tblNovo{font-size:14px; color:#00121e; margin:30px 0px 0px 30px;width:455px;}
+#header{clear:both; background:#999; width:650px; padding:1px; margin:0 auto;}

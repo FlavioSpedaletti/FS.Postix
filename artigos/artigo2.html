@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="url" content="http://www.postix.com.br" />
+		<meta name="language" content="Portugues" />
+		<meta name="description" content="Desenvolvimento de websites. Barato e com qualidade." />
+		<meta name="keywords" content="websites,website,sites,site,barato,qualidade,pre&ccedil;o,baixo" />
+		<meta name="author" content="Flavio Henrique Freitas Spedaletti" />
+		<meta name="robots" content="index,follow" />
+		<meta name="verify-v1" content="56R2rbCFEDj+ehbwhrOeRbqiDEV6TUhF1WMIZxeQ1Fo=" />
+
+		<title>POSTix</title>
+
+		<link rel="shortcut icon" href="imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style_art.css" />
+
+		<script type="text/javascript" src="../js/iepngfix_tilebg.js"></script>
+		<script type="text/javascript" src="../js/atualize_seu_navegador.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			    $.getScript(gaJsHost + "google-analytics.com/ga.js", function(){
+
+			        try {
+						var pageTracker = _gat._getTracker("UA-8971968-1");
+			            pageTracker._trackPageview();
+					} catch(err) {}
+
+					var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+
+			        $('a').each(function(){
+			            var href = $(this).attr('href');
+
+			            if ((href.match(/^https?\:/i)) && (!href.match(document.domain))){
+			                $(this).click(function() {
+			                    var extLink = href.replace(/^https?\:\/\//i, '');
+			                    pageTracker._trackEvent('External', 'Click', extLink);
+			                });
+			            }
+			            else if (href.match(/^mailto\:/i)){
+			                $(this).click(function() {
+			                    var mailLink = href.replace(/^mailto\:/i, '');
+			                    pageTracker._trackEvent('Email', 'Click', mailLink);
+			                });
+			            }
+			            else if (href.match(filetypes)){
+			                $(this).click(function() {
+			                    var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+			                    var filePath = href.replace(/^https?\:\/\/(www.)mydomain\.com\//i, '');
+			                    pageTracker._trackEvent('Download', 'Click - ' + extension, filePath);
+			                });
+			            }
+			        });
+
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div id="container" class="artigos">
+			<div id="content">
+
+				<div id="texto2">
+					<p><strong>Acostume-se: a internet n&atilde;o &eacute; mais das elites</strong></p>
+					<p><strong class="sub">As classes emergentes chegaram de vez ao mundo online, o que est&#225;
+					                       mudando radicalmente o jeito de se fazer internet no Brasil. E quem
+					                       n&#227;o se adaptar r&#225;pido ao novo cen&#225;rio corre o risco de
+					                       cair no esquecimento.</strong></p>
+					<p>&nbsp;</p>
+					<p>Os preconceituosos n&#227;o querem aceitar. Os teimosos insistem em lutar contra. Mas basta olhar
+					   para fora da janela do browser &#8211; algo que muitos deles nunca fazem &#8211; para enxergar a
+					   nova realidade: as classes C e D est&#227;o desembarcando em peso na internet. E assim como acontece
+					   nas rodovi&#225;rias das grandes metr&#243;poles brasileiras, elas chegaram para ficar.</p>
+					<p>Pesquisas j&#225; indicam que temos em torno de 60 milh&#245;es de internautas no Brasil, e s&#243;
+					   algu&eacute;m muito ing&ecirc;nuo &#8211; ou que passou o &#250;ltimo ano voando (sozinho) pelo
+					   Second Life &#8211; pode achar que esse n&#250;mero &eacute; apenas de pessoas das classes A e B.
+					   M&eacute;rito ou n&#227;o do governo Lula, n&#227;o importa: o fato &eacute; que 13,5 milh&#245;es
+					   novos computadores foram vendidos em 2008 e outros 11 milh&#245;es est&#227;o projetados para esse
+					   ano (com crise e tudo).</p>
+					<p>E com a previs&#227;o da chegada da internet pela rede el&eacute;trica, o n&#250;mero de
+					   &#8216;retirantes digitais&#8217; s&#243; tende a aumentar cada vez mais &#8211; pois, acredite,
+					   eles n&#227;o est&#227;o comprando seus primeiros computadores para fazerem as contas de casa no Excel.</p>
+					<p>O que mais atrai os &#8216;emergentes online&#8217; s&#227;o as rede sociais, fen&ocirc;meno que
+					   encontra no brasileiro um habitat perfeito para se desenvolver e dar frutos. N&#227;o &eacute; &agrave;
+					   toa que o Orkut est&#225; pr&#243;ximo dos 15 milh&#245;es de perfis e o &#8216;M&ecirc;issenger&#8217;
+					   (como eles dizem) j&#225; passou dos 20 milh&#245;es de usu&#225;rios. </p>
+					<p>&#201; a prova definitiva de que o perfil do internauta brasileiro est&#225; mudando r&#225;pida e
+					   radicalmente &#8211; tanto que uma pesquisa recente do Datafolha revelou que o n&#250;mero de acessos
+					   em lan houses e locais p&#250;blicos j&#225; &eacute; o maior do pa&#237;s (22% contra 19% de acessos
+					   residenciais). Ou seja, mesmo quem ainda n&#227;o comprou seu &#8216;computador pr&#243;prio&#8217; j&#225;
+					   consegue alugar um espacinho online por 5 reais a hora.</p>
+					<p>O que mais me surpreende, no entanto, &eacute; a relut&acirc;ncia daqueles que se auto-entitulam
+					   &#8216;trend setters&#8217;, &#8216;early adopters&#8217;, &#8216;tech leaders&#8217; (e outros nomes
+					   bonitos juntando duas palavras que n&#227;o pertencem &agrave; nossa l&#237;ngua) em admitir esse novo
+					   cen&#225;rio. J&#225; que eles se gabam tanto por serem sempre os primeiros a descobrir novas
+					   tend&ecirc;ncias, por que dessa vez, ent&#227;o, ficaram para tr&#225;s e insistem em n&#227;o aceitar
+					   a inclus&#227;o digital, que deixou de ser novidade faz tempo? At&eacute; a Rede Globo, ve&#237;culo mais
+					   tradicional do pa&#237;s, percebeu essa mudan&ccedil;a e abriu espa&ccedil;o no Fant&#225;stico para todos
+					   os fen&ocirc;menos da classe C &#8211; incluindo, claro, a internet (pra quem n&#227;o acompanhou, a
+					   Regina Cas&eacute; fez uma s&eacute;rie de reportagens nas Lan Houses das periferias e os epis&#243;dios
+					   j&#225; foram parar no YouTube. </p>
+					<p>Enquanto isso, os &#8216;internautas de fam&#237;lia&#8217; est&#227;o abandonando o &#8216;piscin&#227;o
+					   de Ramos&#8217; do Orkut e pedindo ex&#237;lio no Facebook &#8211; assim como quem muda para um
+					   condom&#237;nio fechado (batizado com um nome em franc&ecirc;s de algum arrondissement de Paris)
+					   logo assim que aparece a primeira favela no bairro. E, curiosamente, os &#8216;bloggers&#8217;, &#8216;
+					   floggers&#8217; e &#8216;twitters&#8217; idolatram as bandas inglesas do &#8216;BritPop&#8217; mas
+					   s&#227;o os primeiros a descer a lenha no tecnobrega, funk, pagode e outros fen&ocirc;menos que nasceram
+					   no mesmo pa&#237;s que eles. E pior: tentam, sozinhos, ganhar essa guerra contra um arrast&#227;o de
+					   milh&#245;es &#8211; enquanto assistem, em seu pr&#243;prio campo, a invas&#227;o da Gavi&#245;es da
+					   Fiel transformar o Mano Menezes no &#8216;twitteiro&#8217; com mais seguidores do Brasil, superando o
+					   &#8216;hypado&#8217; Marcelo Tas.</p>
+					<p>N&#227;o adianta: queiram eles ou n&#227;o, o Brasil ser&#225; sempre o pa&#237;s do radinho de pilha,
+					   e nunca o do Radiohead. E est&#225; na hora das marcas que investem em digital (e dos profissionais
+					   que elaboram estrat&eacute;gias de comunica&ccedil;&#227;o online) aceitarem esse fen&ocirc;meno de
+					   uma vez por todas &#8211; e passarem a explorar todos os caminhos digitais para atingir os diferentes
+					   p&#250;blicos que, agora, coexistem na internet.</p>
+					<p>Sen&#227;o, continuar&#227;o usando termos em ingl&ecirc;s para falar com pessoas que adoram as bobagens
+					   que o Lula diz &#8211; caso contr&#225;rio, ele n&#227;o seria o presidente mais popular &#8216;na
+					   hist&#243;ria desse pa&#237;s&#8217;, para parafrasear o &#8216;p&#243;prio&#8217; (sic).</p>
+					<p>E pra quem ainda prefere as defini&ccedil;&#245;es em ingl&ecirc;s, isso se chama &#8216;power to the
+					   people&#8217;. [Webinsider]</p>
+
+
+        			<p><strong class="sub">Sobre o autor<br>Eco Moliterno &eacute; VP de Cria&ccedil;&atilde;o da Wunderman.</strong></p>
+
+        			<p><strong class="sub"><a href='http://webinsider.uol.com.br/index.php/2009/05/04/acostume-se-a-internet-nao-e-mais-das-elites'>Artigo original</a></strong></p>
+				</div>
+
+			</div>
+        <div id="footer">
+			<p>&copy; Todos os direitos reservados</p>
+			<p id="contato"><a href="mailto:contato@postix.com.br">contato@postix.com.br</a></p>
+        </div>
+
+	</body>
+
+	</script>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="url" content="http://www.postix.com.br" />
+		<meta name="language" content="Portugues" />
+		<meta name="description" content="Desenvolvimento de websites. Barato e com qualidade." />
+		<meta name="keywords" content="websites,website,sites,site,barato,qualidade,pre&ccedil;o,baixo" />
+		<meta name="author" content="Flavio Henrique Freitas Spedaletti" />
+		<meta name="robots" content="index,follow" />
+		<meta name="verify-v1" content="56R2rbCFEDj+ehbwhrOeRbqiDEV6TUhF1WMIZxeQ1Fo=" />
+
+		<title>POSTix</title>
+
+		<link rel="shortcut icon" href="imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+		<script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
+		<script type="text/javascript" src="js/atualize_seu_navegador.js"></script>
+		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			    $.getScript(gaJsHost + "google-analytics.com/ga.js", function(){
+
+			        try {
+						var pageTracker = _gat._getTracker("UA-8971968-1");
+			            pageTracker._trackPageview();
+					} catch(err) {}
+
+					var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+
+			        $('a').each(function(){
+			            var href = $(this).attr('href');
+
+			            if ((href.match(/^https?\:/i)) && (!href.match(document.domain))){
+			                $(this).click(function() {
+			                    var extLink = href.replace(/^https?\:\/\//i, '');
+			                    pageTracker._trackEvent('External', 'Click', extLink);
+			                });
+			            }
+			            else if (href.match(/^mailto\:/i)){
+			                $(this).click(function() {
+			                    var mailLink = href.replace(/^mailto\:/i, '');
+			                    pageTracker._trackEvent('Email', 'Click', mailLink);
+			                });
+			            }
+			            else if (href.match(filetypes)){
+			                $(this).click(function() {
+			                    var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+			                    var filePath = href.replace(/^https?\:\/\/(www.)mydomain\.com\//i, '');
+			                    pageTracker._trackEvent('Download', 'Click - ' + extension, filePath);
+			                });
+			            }
+			        });
+
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1></h1>
+				<a href="http://www.orkut.com.br/Main#Profile.aspx?rl=fpp&uid=7265147108434888847" target="_blank"><h2></h2></a>
+				<a href="http://twitter.com/flavio_hfs" target="_blank"><h3></h3></a>
+				<!--
+				<div id="flash_suspenso">
+					<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="1003" HEIGHT="150" id="plane" ALIGN="">
+					   <PARAM NAME=movie VALUE="fla/logo_main.swf">
+					   <PARAM NAME=quality VALUE=high>
+					   <PARAM NAME=scale VALUE=exactfit>
+					   <PARAM NAME=wmode VALUE=transparent>
+					   <EMBED src="fla/logo_main.swf" quality=high scale=exactfit wmode=transparent WIDTH="1003" HEIGHT="150" NAME="plane" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+					   </EMBED>
+					</OBJECT>
+				</div>
+				-->
+			</div>
+			<hr />
+			<div id="content">
+				<div id="menu" class="itens">
+					<div id="item1" class="naoSelecionado">
+						<a href="index.html" title="">corporativo</a>
+					</div>
+					<div id="item2" class="naoSelecionado">
+						<a href="planos.html" title="">planos</a>
+					</div>
+					<div id="item3" class="naoSelecionado">
+						<a href="portfolio.html" title="">portfolio</a>
+					</div>
+					<div id="item4" class="naoSelecionado">
+						<a href="artigos.html" title="">artigos</a>
+					</div>
+					<div id="item5" class="selecionado">
+						<a href="orcamento.html" title="">or&ccedil;amento</a>
+					</div>
+				</div>
+				<br />
+				<!--
+				<div id="menu_classico">
+					<ul class="itens_class">
+						<li><a id="item1" class="selecionado" href="index.html" title="">corporativo</a></li>
+						<li><a id="item2" class="naoSelecionado" href="#" title="">planos</a></li>
+						<li><a id="item3" class="naoSelecionado" href="#" title="">portfolio</a></li>
+						<li><a id="item4" class="naoSelecionado" href="#" title="">artigos</a></li>
+						<li><a id="item5" class="naoSelecionado" href="#" title="">o</a></li>
+					</ul>
+				</div>
+				<br />
+				-->
+				<div id="menu-esq">
+					<!--
+					<div id="menu-posts">
+						<h2 class="replace"><span></span></h2>
+							<form method="POST" action="http://www18.locaweb.com.br/scripts/FormMail.pl" target="_blank">
+								<input type="HIDDEN" name="recipient" value="contato@postix.com.br">
+								<input type="HIDDEN" name="redirect" value="http://www.postix.com.br#tks">
+								<input type="HIDDEN" name="subject" value="Contato Site">
+								<table width="99%">
+									<tr>
+										<td>
+											<span class="lbl">Nome<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="txt" type="text" id="nome" name="nome" size="24" tabindex="1">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="lbl">E-mail<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="txt" type="text" name="email" id="email" size="24" tabindex="2">
+										</td>
+									</tr>
+									<tr>
+
+										<td>
+											<span class="lbl">Coment&aacute;rios<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<textarea class="txt" id="comentarios" name="comentarios" rows="5" cols="19" tabindex="3"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="submit" onclick="return ValidaForm();" type="image" src="imgs/mail.png" name="Submit" alt="Enviar">
+										</td>
+								</tr>
+
+								</table>
+							</form>
+						<ul class="posts">
+							<li class="twitter1"><a href="#" target="_blank" title="Siga-me os bons"><span></span></a></li>
+							<li class="twitter2"><a href="#" target="_blank" title="Twitter 2"><span></span></a></li>
+							<li class="twitter3"><a href="#" target="_blank" title="Twitter 3"><span></span></a></li>
+							<li class="twitter4"><a href="#" target="_blank" title="Twitter 4"><span></span></a></li>
+						</ul>
+					</div>
+					-->
+					<div id="menu-parceiros">
+						<h2 class="replace"><span></span></h2>
+						<ul class="sites">
+							<li class="site1"><a href="http://www.justit.com.br">site1<span>&nbsp;</span></a></li>
+							<li class="site2"><a href="mailto:contato@postix.com.br">site2<span>&nbsp;</span></a></li>
+							<li class="site3"><a href="mailto:contato@postix.com.br">site3<span>&nbsp;</span></a></li>
+							<li class="site4"><a href="mailto:contato@postix.com.br">site4<span>&nbsp;</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="main2" class="main">
+					<!--<div id="logo-pequeno"></div>-->
+					<div id="texto2">
+						<div id="orcamento">
+							<!--
+							<blockquote class="quotes">
+								<div class="sub-quote">
+									<p><strong>Corporativo</strong></p>
+									<p>O POSTix foi idealizado com um objetivo pr&aacute;tico: trazer seus neg&oacute;cios para a Internet, sejam eles de qualquer porte, com valores justos e qualidade de servi&ccedil;o.</p>
+									<p>Como sabemos, hoje a Web j&aacute; deixou de ser s&oacute; um meio de comunica&ccedil;&atilde;o e pesquisa, &eacute; agora al&eacute;m de tudo, um importante gerador de novos neg&oacute;cios e um estreitamento entre sua empresa e seus clientes.</p>
+									<p>Pensamos as vezes que somente grandes marcas de abrang&ecirc;ncia nacional recebem visitas em seus sites, mas isso &eacute; um pouco equivocado. Quando procuramos por algum tipo de servi&ccedil;o seja ele uma mec&acirc;nica, uma farm&aacute;cia, um dep&oacute;sito de materiais de constru&ccedil;&atilde;o, por exemplo, n&atilde;o queremos ir t&atilde;o longe... e com a grande facilidade hoje que h&aacute; no acesso a internet, a procura por classificados (na pr&oacute;pria Internet, jornais e revistas) pelos consumidores est&aacute; cada vez diminuindo mais, principalmente pela falta de informa&ccedil;&otilde;es detalhadas sobre os produtos/servi&ccedil;os oferecidos. Afinal, dentre tantas op&ccedil;&otilde;es como saber qual &eacute; a melhor para mim com apenas poucos dados? E para voc&ecirc; que realiza este tipo de an&uacute;ncio e quer adicionar um pouco mais de informa&ccedil;&otilde;es paga-se um valor muito alto em um jornal de grande circula&ccedil;&atilde;o, por exemplo.</p>
+									<p>Por isso a import&acirc;ncia de ter seu espa&ccedil;o na web, com informa&ccedil;&#245;es claras, detalhadas, e ser um diferencial em sua regi&#227;o, onde muitas pessoas a sua volta podem estar a procura do que voc&ecirc; est&#225; oferecendo. &#201; muito comum tamb&eacute;m pessoas receberem algum tipo de indica&ccedil;&#227;o sobre sua empresa, ou mesmo olharem algum banner e automaticamente v&#227;o at&eacute; o computador para checar seu endere&ccedil;o correto, seu telefone para contato, e-mail.. etc</p>
+									<p>O POSTix tr&#225;s para seus neg&#243;cios a oportunidade de entrar nessa grande rede por onde passam milhares de pessoas de todos os lugares, todos os dias.</p>
+									<p>Fique a vontade para navegar pelo site e conhe&ccedil;a a solu&ccedil;&#227;o mais adequada para voc&ecirc; e bons neg&#243;cios.</p>
+								</div>
+								- Equipe POSTix
+							</blockquote>
+							-->
+							<p><strong>Or&ccedil;amento</strong></p>
+							<p>Fa&ccedil;a seu or&ccedil;amento sem comprimisso.</p>
+							<form method="POST" action="http://www18.locaweb.com.br/scripts/FormMail.pl">
+								<input type="HIDDEN" name="recipient" value="contato@postix.com.br">
+								<input type="HIDDEN" name="redirect" value="http://www.postix.com.br/orcamento.html#tks">
+								<input type="HIDDEN" name="subject" value="Orcamento">
+								<table width="99%">
+									<tr>
+										<td class="title">Dados pessoais</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="lbl">Nome<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="txt" type="text" id="nome" name="nome" size="70" tabindex="1">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="lbl">Nome do estabelecimento<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="txt" type="text" id="nomeestabelecimento" name="nomeestabelecimento" size="70" tabindex="2">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="lbl">E-mail<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="txt" type="text" name="email" id="email" size="24" tabindex="3">
+										</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="title">Cria&ccedil;&atilde;o</td>
+									</tr>
+										<td>
+											<table width="99%">
+												<tr>
+													<td>
+														<input tabindex="4" class="chk" type="checkbox" name="pg_estatica" value="pagina estatica"><span class="lbl">&nbsp;P&aacute;gina est&aacute;tica</span>
+													</td>
+													<td colspan="2">
+														<span class="lbl">&nbsp;Extras</span>&nbsp;<input tabindex="5" onkeypress="javascript:return Numeros(event);" class="txtqtd" type="text" name="pgs_estaticas_extras">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input tabindex="6" class="chk" type="checkbox" name="pg_estatica_bd" value="pagina estatica com bd"><span class="lbl">&nbsp;P&aacute;gina est&aacute;tica (banco de dados)</span>
+													</td>
+													<td colspan="2">
+														<span class="lbl">&nbsp;Extras</span>&nbsp;<input tabindex="7" onkeypress="javascript:return Numeros(event);" class="txtqtd" type="text" name="pgs_estaticas_bd_extras">
+													</td>
+												</tr>
+												<!--
+												<tr>
+													<td>
+														<input class="chk" type="checkbox" name="pg_estatica" value="pagina estatica"><span class="lbl">&nbsp;P&aacute;gina est&aacute;tica</span>
+													</td>
+													<td colspan="2">
+														<span class="lbl">&nbsp;Extras</span>&nbsp;<input class="txtqtd" type="text" name="pgs_estaticas_extras">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input class="chk" type="checkbox" name="pg_estatica" value="pagina estatica"><span class="lbl">&nbsp;P&aacute;gina est&aacute;tica</span>
+													</td>
+													<td colspan="2">
+														<span class="lbl">&nbsp;Extras</span>&nbsp;<input class="txtqtd" type="text" name="pgs_estaticas_extras">
+													</td>
+												</tr>
+												-->
+												<tr>
+													<td colspan="3">&nbsp;</td>
+												</tr>
+												<tr>
+													<td colspan="3"><a href="planos.html">+ detalhes</a></td>
+												</tr>
+												<tr class="criacao">
+													<td width="40%"><input tabindex="8" class="chk" type="checkbox" name="video_player" value="video player"><span class="lbl">&nbsp;V&iacute;deo player + convers&atilde;o</span></td>
+													<td><input class="chk" tabindex="9" type="checkbox" name="banner_flash" value="banner flash"><span class="lbl">&nbsp;Banner em flash</span></td>
+													<td><input class="chk" tabindex="10" type="checkbox" name="fale_conosco" value="fale conosco"><span class="lbl">&nbsp;Fale conosco</span></td>
+												</tr>
+												<tr class="criacao">
+													<td width="40%"><input tabindex="11" class="chk" type="checkbox" name="google_maps" value="google maps"><span class="lbl">&nbsp;Mapa (Google Maps)</span></td>
+													<td><input class="chk" tabindex="12" type="checkbox" name="google_camendario" value="google calendario"><span class="lbl">&nbsp;Calend&aacute;rio (Google Calendar)</span></td>
+													<td><input class="chk" tabindex="13" type="checkbox" name="noticias" value="noticias"><span class="lbl">&nbsp;Sistema de not&iacute;cias</span></td>
+												</tr>
+												<tr class="criacao">
+													<td width="20%"><input tabindex="14" class="chk" type="checkbox" name="previsao_tempo_climatempo" value="previsao tempo - climatempo"><span class="lbl">&nbsp;Previs&atilde;o do tempo (Climatempo)</span></td>
+													<td><input class="chk" tabindex="15" type="checkbox" name="previsao_tempo_tempoagora" value="previsao tempo - tempo agora"><span class="lbl">&nbsp;Previs&atilde;o do tempo (Tempo agora)</span></td>
+													<td><input class="chk" tabindex="16" type="checkbox" name="enquete" value="enquete"><span class="lbl">&nbsp;Enquete</span></td>
+												</tr>
+												<tr>
+													<td colspan="3">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+
+										<td>
+											<span class="lbl">Coment&aacute;rios adicionais<span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<textarea class="txta" tabindex="17" id="comentarios" name="comentarios" rows="4" cols="19" tabindex="3"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>
+											<input tabindex="18" onclick="javascript:return ValidaOrcamento();" class="btn" type="submit" name="Submit" value="Enviar">
+										</td>
+									</tr>
+
+								</table>
+							</form>
+						</div>
+					</div>
+					<!--
+					    <h2 id="mande-seu-texto" class="replace"><a href="cadastro.php" alt="Mande seu texto!"><span>&nbsp;</span></a></h2>
+					    <div id="galera">
+						<img src="css/img/galera-do-toboga.png" />
+						</div>-->
+				</div>
+				<!--
+				<div id="menu-dir">
+					<div id="menu-destaques">
+						<h2 class="replace"><span></span></h2>
+						<ul class="sites">
+							<li class="site1"><a href="#">site1<span>&nbsp;</span></a></li>
+							<li class="site2"><a href="#">site2<span>&nbsp;</span></a></li>
+							<li class="site3"><a href="#">site3<span>&nbsp;</span></a></li>
+							<li class="site4"><a href="#">site4<span>&nbsp;</span></a></li>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+		</div>
+        <div id="footer">
+        	<p>&copy; Todos os direitos reservados</p>
+        	<p id="contato"><a href="mailto:contato@postix.com.br">contato@postix.com.br</a></p>
+        </div>
+
+	</body>
+
+	<script type="text/javascript">
+
+	var currentAnchor = null;
+	setInterval("checkAnchor()", 300);
+
+	function ValidaOrcamento()
+	{
+			if(document.getElementById)
+			{
+				var nome=document.getElementById('nome');
+				var email=document.getElementById('email');
+
+				if(nome.value=="") { alert('Informe seu nome.'); nome.focus(); return false; }
+				if(email.value=="") { alert('Informe seu e-mail.'); email.focus(); return false; }
+			}
+			return true;
+	}
+
+	function checkAnchor(){
+			//Check if it has changes
+			if(currentAnchor != document.location.hash){
+				currentAnchor = document.location.hash;
+				//if there is not anchor, the loads the default section
+				if(!currentAnchor)
+					query = "section=home";
+				else
+				{
+					//Creates the  string callback. This converts the url URL/#main&id=2 in URL/?section=main&id=2
+					var splits = currentAnchor.substring(1).split('&');
+					//Get the section
+					var section = splits[0];
+					delete splits[0];
+					//Create the params string
+					var params = splits.join('&');
+					var query = "section=" + section + params;
+				}
+
+				switch(section)
+				{
+					case 'tks': { alert('Sua mensagem foi enviada com sucesso.'); break; }
+				}
+			}
+		}
+
+	function Numeros(evt)
+	{
+		 var charCode = (evt.which) ? evt.which : event.keyCode;
+
+		 if (charCode > 31 && (charCode < 48 || charCode > 57 ))
+			return false;
+
+		 return true;
+
+	}
+
+	</script>
+</html>
